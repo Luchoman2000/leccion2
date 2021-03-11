@@ -8,6 +8,8 @@ class vistaControlador extends VistasModelo
     }
 	public function ctrMostrarVistas()
 	{
+		
+		
 		if (isset($_GET["views"])) {
 			$ruta=explode("/",$_GET["views"]);
 			$respuesta=VistasModelo::MdlMostrarVistas($ruta[0]);
